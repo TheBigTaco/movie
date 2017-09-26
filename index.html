@@ -10,12 +10,29 @@
   </head>
   <body>
     <div class="container">
-      <form class="" action="index.html" method="post">
-        <input type="text" name="movie" value="">
-        <input type="text" name="age" value="">
-        <!--<input type="text" name="rating" value="">-->
-        <input type="text" name="time" value="">
+      <h1>Best Novie Tickets</h1>
+      <form>
+        <label for="movieName">Movie:</label>
+        <select class="form-control" id="movieName">
+        </select>
+        <label for="time">Time:</label>
+        <select class="form-control" id="time">
+          <option value="1200">12:00pm</option>
+          <option value="1330">1:30pm</option>
+          <option value="1500">3:00pm</option>
+          <option value="1630">4:30pm</option>
+          <option value="1800">6:00pm</option>
+          <option value="1930">7:30pm</option>
+          <option value="2100">9:00pm</option>
+          <option value="2230">10:30pm</option>
+          <option value="0">12:00am</option>
+          <option value="130">1:30am</option>
+        </select>
+        <label for="age">Age</label>
+        <input id="age" class="form-control" type="text" placeholder="Enter your age">
+        <button type="submit" name="button" class="btn btn-warning">SUBMIT!!</button>
       </form>
+      <p id="output"></p>
     </div>
   </body>
 </html>
